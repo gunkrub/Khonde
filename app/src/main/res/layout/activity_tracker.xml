@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tny.khonde.TrackerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout20"
+        android:background="#fbbf58"
+        android:padding="10dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="ติดตามรถ"
+            android:id="@+id/textView70"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:background="#fff"
+        android:padding="10dp"
+        android:id="@+id/relativeLayout18"
+        android:layout_below="@+id/relativeLayout20"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="00/00/00 00:00"
+            android:id="@+id/tv_datetime"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="฿0"
+            android:id="@+id/tv_price"
+            android:layout_below="@+id/tv_datetime"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="เลขที่จอง "
+            android:id="@+id/textView64"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/tv_job_code" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/image_call"
+            android:src="@drawable/sand_phone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="กรุงเทพฯ - เชียงใหม่"
+            android:id="@+id/tv_from_to"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:gravity="right"
+            android:layout_below="@+id/textView64"
+            android:layout_toStartOf="@+id/image_call"
+            android:layout_toEndOf="@+id/tv_price"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="000000000"
+            android:id="@+id/tv_job_code"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/image_call" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:background="#fff"
+        android:id="@+id/relativeLayout19"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/locations_map"
+        android:layout_alignStart="@+id/locations_map"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tv_driver_name"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:layout_marginLeft="7dp"
+            android:layout_toEndOf="@+id/driver_image"
+            android:layout_toStartOf="@+id/tv_truck_type"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/driver_image"
+            android:background="@drawable/circle_dark_orange"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/ratingLayout"
+            android:layout_below="@+id/tv_driver_name"
+            android:layout_alignLeft="@+id/tv_driver_name"
+            android:layout_alignStart="@+id/tv_driver_name">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/star1"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/star"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/star2"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/star"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/star3"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/star"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/star4"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/star"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/star5"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/star"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#000"
+            android:id="@+id/tv_truck_type" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_license"
+            android:textColor="#000"
+            android:layout_below="@+id/trunk_width_layout"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_height="wrap_content"
+            android:id="@+id/driverLoading"
+            android:layout_centerInParent="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/trunk_width_layout"
+            android:layout_below="@+id/tv_truck_type"
+            android:layout_alignParentEnd="true"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ยาว "
+                android:id="@+id/textView36"
+                android:textColor="#000"
+                android:layout_alignTop="@+id/tv_trunk_width"
+                android:layout_toStartOf="@+id/tv_trunk_width" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_trunk_width"
+                android:textColor="#000"
+                android:layout_alignTop="@+id/textView68"
+                android:layout_toStartOf="@+id/textView68" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ม."
+                android:id="@+id/textView68"
+                android:textColor="#000"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/location_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        tools:layout="@layout/abc_screen_simple"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout18"
+        android:layout_above="@+id/relativeLayout19" />
+
+</RelativeLayout>

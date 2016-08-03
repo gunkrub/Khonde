@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "975084825090",
+    "project_id": "truckcalling"
+  },
+  "client": [
+    {
+      "client_info": {
+        "android_client_info": {
+          "package_name": "TruckCalling"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ1SofE6YxFdC1_zhbqSiGL6D8F-Q_nUo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975084825090:android:009ca48cafb30112",
+        "android_client_info": {
+          "package_name": "com.tny.khonde"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ1SofE6YxFdC1_zhbqSiGL6D8F-Q_nUo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975084825090:android:1ee03070597a8116",
+        "android_client_info": {
+          "package_name": "com.tny.khonde"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ1SofE6YxFdC1_zhbqSiGL6D8F-Q_nUo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

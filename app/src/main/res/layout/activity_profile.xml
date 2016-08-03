@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tny.khonde.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout11"
+        android:background="#fbbf58"
+        android:padding="10dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="ตัวฉัน"
+            android:id="@+id/textView33"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView8"
+        android:layout_below="@+id/relativeLayout11"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/customer_image_layout"
+                android:background="#fff">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/user_image"
+                    android:src="@drawable/profile_icon_circle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#bbb"
+                    android:id="@+id/linearLayout5"
+                    android:layout_below="@+id/user_image"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="15dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/customer_image_layout"
+                android:background="#fff"
+                android:padding="15dp"
+                android:id="@+id/customer_detail_layout">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/relativeLayout9">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ชื่อจริง"
+                        android:id="@+id/et_old_password"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_firstname"
+                        android:layout_below="@+id/et_old_password"
+                        android:layout_alignParentStart="true"
+                        android:textSize="16dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#bbb"
+                        android:id="@+id/linearLayout6"
+                        android:layout_below="@+id/tv_firstname"
+                        android:layout_alignParentStart="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout9"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/relativeLayout12"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="นามสกุล"
+                        android:id="@+id/textView55"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_lastname"
+                        android:layout_below="@+id/textView55"
+                        android:layout_alignParentStart="true"
+                        android:textSize="16dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#bbb"
+                        android:id="@+id/linearLayout14"
+                        android:layout_below="@+id/tv_lastname"
+                        android:layout_alignParentStart="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout12"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/relativeLayout23">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="อีเมลล์"
+                        android:id="@+id/textView58"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_email"
+                        android:layout_below="@+id/textView58"
+                        android:layout_alignParentStart="true"
+                        android:textSize="16dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#bbb"
+                        android:id="@+id/linearLayout16"
+                        android:layout_below="@+id/tv_email"
+                        android:layout_alignParentStart="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout23"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/tel_layout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เบอร์มือถือ"
+                        android:id="@+id/textView62"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_tel"
+                        android:layout_below="@+id/textView62"
+                        android:layout_alignParentStart="true"
+                        android:textSize="16dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="5dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/customer_detail_layout">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#bbb"
+                    android:id="@+id/linearLayout18"
+                    android:layout_alignParentStart="true" />
+
+                <com.cengalabs.flatui.views.FlatButton
+                    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+                    flatui:fl_touchEffect="fl_ripple"
+                    flatui:fl_blockButtonEffectHeight="3dp"
+                    flatui:fl_theme="@array/sand"
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:text="แก้ไขรายละเอียดส่วนตัว"
+                    android:layout_margin="15dp"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_weight="0.5"
+                    android:enabled="true"
+                    android:id="@+id/edit_profileButton"
+                    android:onClick="startEditProfile" />
+
+                <com.cengalabs.flatui.views.FlatButton
+                    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+                    flatui:fl_touchEffect="fl_ripple"
+                    flatui:fl_blockButtonEffectHeight="3dp"
+                    flatui:fl_theme="@array/sand"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/edit_profileButton"
+                    android:layout_width="match_parent"
+                    android:text="เปลี่ยนรหัสผ่าน"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_weight="0.5"
+                    android:enabled="true"
+                    android:id="@+id/edit_passwordButton"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:onClick="startEditPassword" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edit_passwordButton"
+                    android:text="ออกจากระบบ"
+                    android:id="@+id/textView79"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/sand_primary"
+                    android:onClick="logout"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

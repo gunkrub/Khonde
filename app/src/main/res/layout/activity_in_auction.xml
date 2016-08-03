@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+
+<RelativeLayout
+
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#fbbf58"
+android:paddingTop="20dp">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="กำลังเปิดประมูล"
+    android:id="@+id/textView31"
+    android:textSize="25dp"
+    android:textStyle="bold"
+    android:textColor="#ffffff"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true" />
+
+<ImageView
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:id="@+id/imageView12"
+    android:layout_below="@+id/textView31"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/circle_dark_orange"
+    android:layout_marginTop="5dp" />
+    <com.github.lzyzsd.circleprogress.DonutProgress
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/donut_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:donut_progress="0"
+        custom:donut_unfinished_stroke_width="3dp"
+        custom:donut_finished_stroke_width="3dp"
+        custom:donut_suffix_text=""
+        custom:donut_finished_color="@color/orange_primary"
+        custom:donut_text_size="0dp"
+        android:layout_below="@+id/textView31"
+        android:layout_centerHorizontal="true" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="120"
+    android:id="@+id/tv_countdown_time"
+    android:layout_alignTop="@+id/imageView12"
+    android:layout_alignBottom="@+id/imageView12"
+    android:layout_alignRight="@+id/imageView12"
+    android:layout_alignEnd="@+id/imageView12"
+    android:layout_alignLeft="@+id/imageView12"
+    android:layout_alignStart="@+id/imageView12"
+    android:gravity="center_vertical|center_horizontal"
+    android:textColor="#fff"
+    android:textSize="35dp"
+    android:textStyle="bold" />
+
+<ImageView
+    android:layout_width="140dp"
+    android:layout_height="140dp"
+    android:id="@+id/imageView13"
+    android:background="@drawable/circle_dark_orange"
+    android:layout_below="@+id/textView34"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="5dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="15,000"
+    android:id="@+id/bid_price"
+    android:gravity="center_vertical|center_horizontal"
+    android:textColor="#fff"
+    android:textSize="35dp"
+    android:textStyle="bold"
+    android:layout_alignRight="@+id/imageView13"
+    android:layout_alignEnd="@+id/imageView13"
+    android:layout_alignLeft="@+id/imageView13"
+    android:layout_alignStart="@+id/imageView13"
+    android:layout_alignTop="@+id/imageView13"
+    android:layout_alignBottom="@+id/imageView13" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="ราคาจะลดลงตามที่คนขับเสนอ"
+    android:id="@+id/textView34"
+    android:textSize="16dp"
+    android:textStyle="bold"
+    android:textColor="#ffffff"
+    android:gravity="center_horizontal"
+    android:layout_below="@+id/textView39"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="ราคาเสนอจากคนขับ"
+    android:id="@+id/textView39"
+    android:textSize="25dp"
+    android:textStyle="bold"
+    android:textColor="#ffffff"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/imageView12"
+    android:layout_marginTop="30dp" />
+
+<com.cengalabs.flatui.views.FlatButton
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    flatui:fl_touchEffect="fl_ripple"
+    flatui:fl_blockButtonEffectHeight="3dp"
+    flatui:fl_theme="@array/blood"
+    android:layout_height="50dp"
+    android:layout_width="wrap_content"
+    android:text="ยกเลิก"
+    flatui:fl_fontWeight="bold"
+    android:textSize="20dp"
+    android:id="@+id/cancleButton"
+    android:layout_below="@+id/linearLayout9"
+    android:layout_alignLeft="@+id/linearLayout9"
+    android:layout_alignStart="@+id/linearLayout9"
+    android:layout_alignRight="@+id/linearLayout9"
+    android:layout_alignEnd="@+id/linearLayout9"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:onClick="cancel_job" />
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_card"
+    android:layout_below="@+id/imageView13"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="5dp"
+    android:id="@+id/linearLayout9">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imageView14"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/circle_green"
+                android:padding="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="รับ"
+                android:id="@+id/textView40"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/imageView14"
+                android:layout_alignEnd="@+id/imageView14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/tv_pickup_province"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageView14"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imageView15"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/circle_blue"
+                android:padding="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ส่ง"
+                android:id="@+id/textView41"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/imageView15"
+                android:layout_alignEnd="@+id/imageView15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/tv_dropoff_province"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageView15"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0"
+        android:layout_below="@+id/textView21"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/tv_truck_type"
+                android:layout_centerVertical="true"
+                android:textColor="#000"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/tv_roof_type"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0"
+        android:layout_below="@+id/textView21"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/tv_trunk_width"
+                android:layout_centerVertical="true"
+                android:textColor="#000"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/tv_extra"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</RelativeLayout>
+</ScrollView>

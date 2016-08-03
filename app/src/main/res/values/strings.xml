@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Khonde</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="website_url">http://khonde.com/mobile_connect/customer/</string>
+    <string name="no_internet">กรุณาเชื่อมต่ออินเตอร์เน็ต</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

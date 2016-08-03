@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Buttons">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Buttons_Row1" >
+
+        <RelativeLayout
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:layout_weight=".33"
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/annoucement_button"
+            android:onClick="click1"
+            android:paddingTop="16sp" >
+
+            <ImageView
+                android:layout_width="55sp"
+                android:layout_height="70sp"
+                android:id="@+id/imageView7"
+                android:src="@drawable/news_icon"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="ประกาศ"
+                android:id="@+id/textView"
+                android:layout_below="@+id/imageView7"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:onClick="click1"
+            android:layout_weight=".33"
+            android:id="@+id/profile_button"
+            android:background="?android:attr/selectableItemBackground"
+            android:paddingTop="16sp" >
+
+            <ImageView
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:id="@+id/user_image"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/profile_icon_circle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/user_image"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="ตัวฉัน" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:onClick="click1"
+            android:layout_weight=".33"
+            android:id="@+id/setting_button"
+            android:background="?android:attr/selectableItemBackground"
+            android:paddingTop="16sp" >
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="70sp"
+                android:id="@+id/imageView36"
+                android:src="@drawable/settings_icon"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="ตั้งค่า"
+                android:id="@+id/textView5"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_below="@+id/imageView36"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Buttons_Row2" >
+
+        <RelativeLayout
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:onClick="click1"
+            android:layout_weight=".33"
+            android:id="@+id/howtouse_button"
+            android:background="?android:attr/selectableItemBackground"
+            android:paddingTop="16sp" >
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="70sp"
+                android:id="@+id/imageView40"
+                android:src="@drawable/teach_icon"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView16"
+                android:layout_below="@+id/imageView40"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="วิธีใช้แแอพ" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:onClick="click1"
+            android:layout_weight=".33"
+            android:id="@+id/contact_button"
+            android:background="?android:attr/selectableItemBackground"
+            android:paddingTop="16sp" >
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="70sp"
+                android:id="@+id/imageView41"
+                android:src="@drawable/contact_icon"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="ติดต่อทีมงาน"
+                android:id="@+id/textView18"
+                android:layout_below="@+id/imageView41"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:onClick="click1"
+            android:layout_weight=".33"
+            android:id="@+id/relativeLayout25"
+            android:paddingTop="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

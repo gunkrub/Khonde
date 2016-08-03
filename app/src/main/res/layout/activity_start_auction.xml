@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tny.khonde.StartAuctionActivity"
+    android:background="#fbbf58"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView6"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="เลือกระยะเวลาประมูล"
+                android:id="@+id/textView29"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_marginTop="40dp" />
+
+            <com.cengalabs.flatui.views.FlatButton
+                xmlns:flatui="http://schemas.android.com/apk/res-auto"
+                flatui:fl_touchEffect="fl_ripple"
+                flatui:fl_blockButtonEffectHeight="3dp"
+                flatui:fl_theme="@array/orange"
+                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:text="2 นาที"
+                flatui:fl_fontWeight="bold"
+                android:textSize="20dp"
+                android:layout_below="@+id/textView29"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/count_time_1"
+                android:onClick="changeCountTime" />
+
+            <com.cengalabs.flatui.views.FlatButton
+                xmlns:flatui="http://schemas.android.com/apk/res-auto"
+                flatui:fl_touchEffect="fl_ripple"
+                flatui:fl_blockButtonEffectHeight="3dp"
+                flatui:fl_theme="@array/orange"
+                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:text="4 นาที"
+                flatui:fl_fontWeight="bold"
+                android:textSize="20dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_below="@+id/count_time_1"
+                android:layout_alignLeft="@+id/count_time_1"
+                android:layout_alignStart="@+id/count_time_1"
+                android:id="@+id/count_time_2"
+                android:layout_marginTop="15dp"
+                android:onClick="changeCountTime" />
+
+            <com.cengalabs.flatui.views.FlatButton
+                xmlns:flatui="http://schemas.android.com/apk/res-auto"
+                flatui:fl_touchEffect="fl_ripple"
+                flatui:fl_blockButtonEffectHeight="3dp"
+                flatui:fl_theme="@array/orange"
+                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:text="6 นาที"
+                flatui:fl_fontWeight="bold"
+                android:textSize="20dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_below="@+id/count_time_2"
+                android:layout_alignLeft="@+id/count_time_2"
+                android:layout_alignStart="@+id/count_time_2"
+                android:layout_marginTop="15dp"
+                android:id="@+id/count_time_3"
+                android:onClick="changeCountTime" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="กำหนดราคาเปิดประมูล"
+                android:id="@+id/textView30"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/count_time_3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/et_bid_price"
+                android:background="@drawable/white_card"
+                android:textSize="25dp"
+                android:textColor="#000"
+                android:textColorHint="#ccc"
+                android:layout_alignRight="@+id/textView30"
+                android:layout_alignEnd="@+id/textView30"
+                android:layout_below="@+id/textView30"
+                android:layout_alignStart="@+id/textView30"
+                android:layout_marginTop="20dp"
+                android:hint="0"
+                android:textStyle="bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_alignLeft="@+id/textView30"
+                android:inputType="number"
+                android:layout_marginBottom="55dp" />
+
+            <com.cengalabs.flatui.views.FlatButton
+                xmlns:flatui="http://schemas.android.com/apk/res-auto"
+                flatui:fl_touchEffect="fl_ripple"
+                flatui:fl_blockButtonEffectHeight="3dp"
+                flatui:fl_theme="@array/orange"
+                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:text="เริ่มการประมูล"
+                flatui:fl_fontWeight="bold"
+                android:textSize="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+                android:onClick="bookTruck"
+                android:enabled="false"
+                android:id="@+id/startAuctionButton" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

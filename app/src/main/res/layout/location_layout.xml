@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/stop_by_view"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="สถานที่แวะ"
+        android:id="@+id/stop_by_desc"
+        android:textSize="16dp"
+        android:textStyle="italic"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/imageView24"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/imageView24"
+        android:layout_toStartOf="@+id/remove_button"
+        android:layout_toLeftOf="@+id/remove_button"
+        android:layout_marginRight="20dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageView24"
+        android:src="@drawable/circle_dark_orange"
+        android:padding="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/remove_button"
+        android:src="@android:drawable/ic_delete"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/stop_by_desc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tv_stop_by_desc"
+        android:layout_alignStart="@+id/stop_by_desc"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/stop_by_desc"
+        android:gravity="center_vertical" />
+</RelativeLayout>

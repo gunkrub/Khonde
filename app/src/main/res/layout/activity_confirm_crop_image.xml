@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/image_croppedImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription=""
+        android:layout_above="@+id/button2" />
+
+    <com.cengalabs.flatui.views.FlatButton
+        xmlns:flatui="http://schemas.android.com/apk/res-auto"
+        flatui:fl_touchEffect="fl_ripple"
+        flatui:fl_blockButtonEffectHeight="3dp"
+        flatui:fl_theme="@array/sand"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="ยืนยัน"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_weight="0.5"
+        android:enabled="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:id="@+id/button2"
+        android:onClick="confirmCroppedImage" />
+
+</RelativeLayout>

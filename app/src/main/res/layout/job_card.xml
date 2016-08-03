@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_card"
+        android:padding="7dp"
+        android:elevation="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DateTime"
+            android:id="@+id/tv_datetime"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_job_code"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#000" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#e0e0e0"
+            android:id="@+id/linearLayout12"
+            android:layout_below="@+id/tv_datetime"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageView16"
+            android:src="@drawable/circle_green"
+            android:padding="2dp"
+            android:layout_alignTop="@+id/linearLayout12"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="รับ"
+            android:id="@+id/textView57"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_alignRight="@+id/imageView16"
+            android:layout_alignEnd="@+id/imageView16"
+            android:layout_alignLeft="@+id/linearLayout12"
+            android:layout_alignStart="@+id/linearLayout12"
+            android:layout_alignBottom="@+id/imageView16"
+            android:gravity="center_vertical"
+            android:layout_alignTop="@+id/imageView16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/tv_starting_desc"
+            android:layout_alignTop="@+id/imageView16"
+            android:layout_toRightOf="@+id/imageView16"
+            android:layout_alignBottom="@+id/imageView16"
+            android:gravity="center_vertical"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/stop_bys"
+            android:layout_below="@+id/imageView16"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentStart="true">
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageView22"
+            android:src="@drawable/circle_blue"
+            android:padding="2dp"
+            android:layout_below="@+id/stop_bys"
+            android:layout_alignLeft="@+id/imageView16"
+            android:layout_alignStart="@+id/imageView16"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ส่ง"
+            android:id="@+id/textView59"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:layout_alignTop="@+id/imageView22"
+            android:layout_alignLeft="@+id/imageView22"
+            android:layout_alignStart="@+id/imageView22"
+            android:layout_alignBottom="@+id/imageView22"
+            android:layout_alignRight="@+id/imageView22"
+            android:layout_alignEnd="@+id/imageView22" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/tv_destination_desc"
+            android:gravity="center_vertical"
+            android:textColor="#000"
+            android:layout_alignTop="@+id/imageView22"
+            android:layout_toRightOf="@+id/imageView22"
+            android:layout_alignBottom="@+id/imageView22"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#e0e0e0"
+            android:id="@+id/linearLayout13"
+            android:layout_below="@+id/imageView22"
+            android:layout_alignLeft="@+id/imageView22"
+            android:layout_alignStart="@+id/imageView22"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView61"
+            android:layout_below="@+id/linearLayout13"
+            android:layout_centerHorizontal="true">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ค่าขนส่ง ฿"
+                android:textColor="#000"
+                android:id="@+id/textVieww" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12,000"
+                android:textColor="#000"
+                android:id="@+id/tv_final_price"
+                android:layout_toEndOf="@+id/textVieww" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView61"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            xmlns:flatui="http://schemas.android.com/apk/res-auto"
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.cengalabs.flatui.views.FlatButton
+                    flatui:fl_touchEffect="fl_ripple"
+                    flatui:fl_blockButtonEffectHeight="3dp"
+                    flatui:fl_theme="@array/sand"
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent"
+                    android:text="ดูตำแหน่งรถ"
+                    android:layout_margin="5dp"
+                    android:textSize="16dp"
+                    android:enabled="true"
+                    android:layout_weight=".3"
+                    android:id="@+id/trackLocationButton" />
+
+                <com.cengalabs.flatui.views.FlatButton
+                    flatui:fl_touchEffect="fl_ripple"
+                    flatui:fl_blockButtonEffectHeight="3dp"
+                    flatui:fl_theme="@array/sand"
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent"
+                    android:text="จองอีกครั้ง"
+                    android:layout_margin="5dp"
+                    android:textSize="16dp"
+                    android:layout_weight=".3"
+                    android:id="@+id/rebookButton" />
+            </LinearLayout>
+
+            <com.cengalabs.flatui.views.FlatButton
+                flatui:fl_touchEffect="fl_ripple"
+                flatui:fl_blockButtonEffectHeight="3dp"
+                flatui:fl_theme="@array/sand"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:text="เพิ่มในรายการโปรด"
+                android:textSize="16dp"
+                android:layout_weight=".3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/addtofavButton" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เลขที่จอง "
+            android:id="@+id/textView20"
+            android:textColor="#000"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/tv_job_code" />
+
+    </RelativeLayout>
+</RelativeLayout>

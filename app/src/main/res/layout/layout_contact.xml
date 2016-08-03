@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/location_type_image"
+        android:src="@drawable/circle_green"
+        android:padding="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="รับ"
+        android:id="@+id/location_type_label"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/location_type_image"
+        android:layout_alignRight="@+id/location_type_image"
+        android:layout_alignEnd="@+id/location_type_image"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="122/4 ถ.นวมินทร์24 แขวงคลองกุ่ม เขตบึงกุ่ม กทม. 10240"
+        android:id="@+id/address_label"
+        android:textSize="16dp"
+        android:layout_alignTop="@+id/location_type_image"
+        android:layout_toRightOf="@+id/location_type_image"
+        android:layout_toEndOf="@+id/location_type_image"
+        android:textColor="#000"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address_label"
+        android:layout_alignLeft="@+id/address_label"
+        android:layout_alignStart="@+id/address_label"
+        android:layout_marginTop="15dp"
+        android:id="@+id/relativeLayout16"
+        android:layout_alignParentEnd="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/my_info_layout">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView8"
+                android:src="@drawable/cross_plus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ข้อมูลของฉัน"
+                android:id="@+id/textView37"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageView8"
+                android:layout_toEndOf="@+id/imageView8"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/sand_primary"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/my_info_layout"
+            android:id="@+id/from_contact_layout">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView9"
+                android:src="@drawable/cross_plus"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="เลือกจากรายชื่อ"
+                android:id="@+id/textView38"
+                android:textColor="@color/sand_primary"
+                android:textSize="16dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageView9"
+                android:layout_toEndOf="@+id/imageView9"
+                android:layout_marginLeft="5dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout16"
+        android:layout_alignLeft="@+id/relativeLayout16"
+        android:layout_alignStart="@+id/relativeLayout16"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:id="@+id/imageView10"
+            android:src="@drawable/grey_profile" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></RelativeLayout>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_name"
+            android:layout_toRightOf="@+id/imageView10"
+            android:layout_alignTop="@+id/imageView10"
+            android:background="@drawable/white_card"
+            android:layout_marginLeft="10dp"
+            android:hint="ชื่อผู้ติดต่อ"
+            android:textSize="16dp"
+            android:gravity="bottom"
+            android:textColor="#000"
+            android:textColorHint="#ccc"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:id="@+id/imageView11"
+            android:src="@drawable/grey_phone"
+            android:layout_below="@+id/imageView10"
+            android:layout_alignLeft="@+id/imageView10"
+            android:layout_alignStart="@+id/imageView10"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_tel"
+            android:background="@drawable/white_card"
+            android:hint="เบอร์โทรศัพท์"
+            android:textSize="16dp"
+            android:gravity="bottom"
+            android:layout_alignTop="@+id/imageView11"
+            android:layout_alignLeft="@+id/edittext_name"
+            android:layout_alignStart="@+id/edittext_name"
+            android:layout_alignRight="@+id/edittext_name"
+            android:layout_alignEnd="@+id/edittext_name"
+            android:textColor="#000"
+            android:textColorHint="#ccc"
+            android:inputType="phone" />
+    </RelativeLayout>
+
+</RelativeLayout>
